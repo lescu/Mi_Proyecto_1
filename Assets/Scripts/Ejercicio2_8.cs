@@ -12,18 +12,18 @@ public class Ejercicio2_8 : MonoBehaviour
         PorcntgVida = (vida * 3) / 100;
         
         vida -= PorcntgVida;
+        Debug.Log(vida); //3%
+
+        vida -= PorcntgVida * 2;
+        Debug.Log(vida); //6%
+
+        vida -= PorcntgVida * 3;
         Debug.Log(vida);
 
-        vida -= PorcntgVida;
+        vida -= PorcntgVida * 4;
         Debug.Log(vida);
 
-        vida -= PorcntgVida;
-        Debug.Log(vida);
-
-        vida -= PorcntgVida;
-        Debug.Log(vida);
-
-        vida -= PorcntgVida;
+        vida -= PorcntgVida * 5;
         Debug.Log(vida);
     }
 

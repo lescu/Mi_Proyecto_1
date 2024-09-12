@@ -13,6 +13,12 @@ public class Ejercicio1_1 : MonoBehaviour
     string explorador; //Por defecto es ""
     char solucionPuzzle; //Por defecto es ''
 
+    //[SerializeField] -> mostrar en el inspector, no hace falta poner unidades
+    [SerializeField] int mostrar;
+
+    //Variables globales
+    float variablesGlobales;
+
     int pocion = 9;
     int OpcionA = 3;
     int OpcionB = 6;
@@ -46,9 +52,16 @@ public class Ejercicio1_1 : MonoBehaviour
 
         OpcionA = 6;
         OpcionC = 6;
+
+
         
     }
 
+    void SumarNumeros()
+    {
+        //variablesGlobales();
+        //Debug.Log(varialesGlobales);
+    }
     // Update is called once per frame
     void Update()
     {
