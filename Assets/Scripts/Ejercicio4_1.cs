@@ -3,28 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ejercicio4_1 : MonoBehaviour
-{
-    float Pi = 3.14f;
-    float radioCirc = 15.2f;
-   
-   
-    int baseTre = 18;
-    int alturaTre = 6;
-   
-    
-    float lado = 6.8f;
-     
+{    
     // Start is called before the first frame update
     void Start()
     {
         //string COMPRAENBOLSA = IrASuper(3, "AV23");
         //Debug.Log(COMPRAENBOLSA);
 
-        float areaCirc = CalculoCirc(Pi , radioCirc);
+        float areaCirc = CalculoCirc(3.14f , 15.2f);
         Debug.Log("El area del circulo es = " + areaCirc);
 
-        int areaTre = CalculoTre(baseTre, alturaTre);
+        int areaTre = CalculoTre(18, 3);
         Debug.Log("El area del triangulo es = " + areaTre);
+
+        float areaCuadra = CalculoCuadra(6.8f);
+        Debug.Log("El area del cuadrado es = " + areaCuadra);
     }
 
     float CalculoCirc(float Pi, float radioCirc)
@@ -38,6 +31,12 @@ public class Ejercicio4_1 : MonoBehaviour
     {
         int CalculoATre = (baseTre * alturaTre) / 2;
         return CalculoATre;
+    }
+
+    float CalculoCuadra(float lado)
+    {
+        float CalculoCuadra = lado * lado;
+        return CalculoCuadra;
     }
 
 
