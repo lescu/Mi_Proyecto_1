@@ -24,6 +24,10 @@ public class Ejercicio1_1 : MonoBehaviour
     int OpcionB = 6;
     int OpcionC;
 
+    //Condicionales 
+    [SerializeField]bool CarnetConducir;
+    int edad = 18;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +57,23 @@ public class Ejercicio1_1 : MonoBehaviour
         OpcionA = 6;
         OpcionC = 6;
 
+        if (CarnetConducir == true)
+        {
+            Debug.Log("Puedes Conducir");
+        }
 
+        Debug.Log("Hola Mundo!");
+
+
+        //Anidamiento: Meter estructura dentro de otra 
         
+        if (edad >= 18) //Filtro 1 -> Si tienes edad suficiente
+        {
+            if (CarnetConducir == true) //Filtro 2 -> 
+            {
+                Debug.Log("Puedo conducir legalmente");
+            }
+        }
     }
 
     void SumarNumeros()
