@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.Video;
 
 public class Ejercicio1_1 : MonoBehaviour
 {
@@ -74,6 +76,42 @@ public class Ejercicio1_1 : MonoBehaviour
                 Debug.Log("Puedo conducir legalmente");
             }
         }
+
+        //Bucle infinito: Rompe el programa
+        //while (vida > 0) //Bucle
+        //{
+        //    Debug.Log("Sigo vivo :)");
+        //}
+
+        //Bucle indeterminado -> no esta hecho para contar.
+        while (vida < 0)
+        {
+            Debug.Log("Sigo vivo, me quedan " + vida + "vidas");
+            vida--;
+        }
+
+        //Bucle for -> esta hecho para contar
+        //la i cuenta las vueltas (tipo int), 
+        //Cuenta la i empezando de 0, hasta 14, de uno en uno
+        //Para desde el soldado 0, hasta el soldado 99 de 1 en 1... *
+        for (int soldado = 0; soldado < 15; soldado++)     //(15 en este caso) las veces que se repite
+        {
+            //* Me haces esto
+            Debug.Log("El soldado " + soldado + " sale a batalla");
+        }
+
+        for (int niveles = 0; niveles < 5; niveles++)
+        {
+            for (int rondas = 0; rondas < 20; rondas++)
+            {
+                for (int enemigos = 0; enemigos < 10; enemigos++)
+                {
+                    Debug.Log("SAle al campo el enemigo " + enemigos + "de la ronda " + rondas +
+                        "del nivel " + niveles);
+                }
+            }
+        }
+
     }
 
     void SumarNumeros()
