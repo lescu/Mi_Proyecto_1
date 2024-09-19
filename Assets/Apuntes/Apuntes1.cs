@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Video;
 
-public class Ejercicio1_1 : MonoBehaviour
+public class Apuntes1 : MonoBehaviour
 {
     //Declarar variables
     
