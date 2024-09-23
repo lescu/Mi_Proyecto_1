@@ -435,7 +435,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008854775}
-  - component: {fileID: 1008854776}
   m_Layer: 0
   m_Name: Ejercicios
   m_TagString: Untagged
@@ -458,21 +457,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1008854776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008854773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78584b9fb54cdc8429f8c7a6e38eb3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad1: 30
-  velocidad2: 27
-  velocidad3: 25
 --- !u!1 &1651565982
 GameObject:
   m_ObjectHideFlags: 0
