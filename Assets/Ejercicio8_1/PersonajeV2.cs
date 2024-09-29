@@ -9,17 +9,15 @@ public class PersonajeV2 : MonoBehaviour
     private float experiencia;
     private float LVL;
 
-    public float LVL1 { get => LVL; set => LVL = value; }
 
     // Start is called before the first frame update
     void Start()
     {
 
     }
-
-    float CalcularNivel(float experiencia, float LVL)
+    float CalculoNVL(float experiencia, float LVL)
     {
-        LVL = experiencia / 100;
+        LVL = experiencia / 1000;
         return LVL;
     }
 

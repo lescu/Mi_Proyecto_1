@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ejercicio7_7 : MonoBehaviour
+public class Ejercicio7_8 : MonoBehaviour
 {
     [SerializeField] int numero1;
     [SerializeField] int numero2;
@@ -13,16 +13,23 @@ public class Ejercicio7_7 : MonoBehaviour
         {
             for (int i = numero1; i <= numero2; i++)
             {
-                Debug.Log(i);
+                if(i % 2 == 0)
+                {
+                    Debug.Log(i);
+                }
             }
         }
         else
         {
-            for(int i = numero2; i <= numero1; i++)
+            for (int i = numero2; i <= numero1; i++)
             {
-                Debug.Log(i);
+                if (i % 2 == 0)
+                {
+                    Debug.Log(i);
+                }
             }
         }
+
     }
 
     // Update is called once per frame
